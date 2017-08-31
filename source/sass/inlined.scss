@@ -1,0 +1,93 @@
+/**
+ * Inlined (inlined.scss)
+ *
+ * - This CSS code will be inlined.
+ * - Media queries will be grouped in the <head> of your email template.
+ */
+
+/* ----- Charset ----- */
+@charset 'UTF-8';
+
+/* ----- Variables ----- */
+@import 'variables';
+
+/* ----- Tools ----- */
+@import 'tools/grid';
+
+/* ----- Generic ----- */
+@import 'generic/reset';
+@import 'generic/typography';
+
+/* ----- Objects ----- */
+@import 'objects/grid';
+
+/* ----- Utilities ----- */
+@import 'utilities/alignment';
+@import 'utilities/images';
+
+/* ----- Components ----- */
+@import 'components/preheader';
+@import 'components/buttons';
+@import 'components/hero';
+.logo {
+  text-align: center;
+  height: 150px;
+  position: relative;
+  @media (max-width: $breakpoint-mobile) {
+    padding-top: 30px;
+  }
+  .line-shadow {
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+.content {
+  font-size: 24px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 60px;
+  line-height: 1.2;
+  letter-spacing: 0.9px;
+  p {
+    span {
+      color: #d3001e;
+    }
+  }
+  @media (max-width: $breakpoint-mobile) {
+
+    font-size: 14px!important;
+  }
+}
+.footer {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  background-color: #f8f8f8;
+  text-align: center;
+  p {
+    margin-bottom: 30px;
+  }
+  a {
+    color: #cc001c;
+    &.btn {
+      min-width: 240px;
+      display: inline-block;
+      height: 40px;
+      line-height: 40px;
+      color: #fff;
+      padding: 0 5px;
+      background-color: #4c75a3;
+      border-radius: 10px;
+      text-decoration: none;
+      img {
+        vertical-align: middle;
+        margin-right: 20px;
+      }
+    }
+  }
+}
